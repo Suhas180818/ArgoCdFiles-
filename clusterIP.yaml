@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: my-service
+  namespace: suhas-namespace
+spec:
+   type: ClusterIP
+   selector:
+       app: suhas-app
+   ports:
+   - port: 80
+     targetPort: 8080  
